@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>vowel consonent in string</title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+
+    <script>
+        const  str= prompt("enter the string");
+        let countVowel=0;
+        let countConsonent=0;
+
+        function vowelConsonentCounter (str){
+        for (let i=0;i<str.length;i++){
+            if(str[i]==='a' || str[i]==='e' || str[i]==='e' || str[i]==='i' || str[i]==='o' || str[i]==='u'){
+               countVowel++;
+            }else{
+                countConsonent++;
+            }
+        }
+        console.log("vowel is ",countVowel , "and consonent is ", countConsonent)
+    }
+    vowelConsonentCounter(str);
+    </script>
+
+</body>
+
+</html>

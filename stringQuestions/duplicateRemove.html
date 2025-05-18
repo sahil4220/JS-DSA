@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>remove duplicate</title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+
+    <!-- <script>
+        const  str= prompt("enter the string");
+        let  updateStr="";
+
+        function removeDuplicate (str) {
+            for (let i=0;i<str.length;i++){
+            let isDuplicate=false;
+            for(let j=0;j<i;j++){
+                if(str[i]===str[j]){
+                   isDuplicate=true;
+                   break;
+                }
+            }
+            if(!isDuplicate){
+                    updateStr=updateStr+str[i];
+                }
+        }
+        console.log("updated string is",updateStr);
+    }
+    removeDuplicate(str);
+    </script> -->
+
+<!-- <script>
+    const  str= prompt("enter the string");
+   
+    function removeDuplicate (str) {
+        let  updateStr="";
+        let duplicate={};
+        for(let i=0;i<str.length;i++){
+            let ch=str[i];
+            if(duplicate[ch]){
+                duplicate[ch]++;
+            }else{
+               duplicate[ch]=1;
+            }
+        }
+        for(const key in duplicate){
+           updateStr=updateStr+key;
+        }
+        console.log("updated string is ", updateStr);
+    }
+    removeDuplicate(str);
+
+</script> -->
+
+
+<script>
+    const  str= prompt("enter the string");
+   
+   function removeDuplicate (str) {
+       let  updateStr="";
+       let duplicate={};
+       for(let i=0;i<str.length;i++){
+           let ch=str[i];
+           if(!duplicate[ch]){
+               duplicate[ch]=true;
+               updateStr+=ch;
+           }
+
+       }
+       console.log("updated string is ", updateStr);
+    }
+    removeDuplicate(str);
+</script>
+
+</body>
+
+</html>

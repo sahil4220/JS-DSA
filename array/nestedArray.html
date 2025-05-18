@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>maximum number in nested array </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+<script>
+let nestedarr=[[3,4,2] , [32,7,5] , [12,191,4]];
+
+function nestedArray () {
+    let max=nestedarr[0][0];
+    for(let i=0;i<nestedarr.length;i++){
+        for(let j=0;j<nestedarr[i].length;j++){
+if(max<nestedarr[i][j]){
+max=nestedarr[i][j];
+}
+        }
+    }
+    console.log("largest in nested aray is",max);
+}
+nestedArray();
+
+
+</script>
+            
+</body>
+
+</html>

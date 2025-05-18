@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>longest word </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+
+    <script>
+
+        let str = prompt("enter the string");
+        
+        function findLongestWord(str) {
+           let word=str.split(" ");
+           let longestWord="";
+           let maxLength=0;
+           for(let i=0;i<word.length;i++){
+            let currentlength=0;
+            for(let j=0;j<word[i].length;j++){
+                currentlength++;
+            }
+            if(currentlength>maxLength){
+                maxLength=currentlength;
+                longestWord=word[i];
+            }
+           }
+           console.log("longest word is: ",longestWord, "and its length is: ",maxLength)
+        }
+    
+      findLongestWord(str);
+
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>prime number </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+<script>
+let num=Number(prompt("enter the number"));
+
+function primeNumber () {
+    
+    if (num===1 ){
+        console.log(" 1 is neither prime number or composite");
+        return;
+    }
+     if (num===2){
+        console.log(" 2 is  prime number");
+        return;
+    }
+       let isPrime=true;
+        for(let i=2;i<num;i++){
+        if(num%i===0){
+            isPrime=false;
+            break;
+        }
+    }
+
+    if(isPrime){
+        console.log(`${num} is prime number`);
+    }else{
+        console.log(`${num} is not prime number`);
+    }
+
+    }
+    
+
+primeNumber();
+
+
+
+</script>
+            
+</body>
+
+</html>

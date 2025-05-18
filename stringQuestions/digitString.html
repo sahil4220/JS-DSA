@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>digit in string</title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+
+    <script>
+        let str= prompt("enter the string");
+
+        function checkdigit (str){
+        for (let i=0;i<str.length;i++){
+            if(str[i]<'0' || str[i]>'9'){
+                console.log("string have another characters too");
+               return;
+            }
+        }
+        console.log("string have only digits ")
+    }
+    checkdigit(str);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>first non repeating character</title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+
+    <!-- <script>
+        let str = prompt("enter the string");
+
+        function NonRepeatingCharacter(str) {
+            let nonRepeatingCh = "";
+            let repeatedCh = "";
+            for (let i = 0; i < str.length; i++) {
+                let count = 0;
+                for (let j = 0; j < str.length; j++) {
+
+                    if (str[i] == str[j]) {
+                        count++;
+                    }
+                }
+                if (count > 1) {
+                    repeatedCh += str[i];
+                } else {
+                    nonRepeatingCh += str[i];
+                }
+
+            }
+            result=nonRepeatingCh[0];
+           console.log("first non repeating character is ",result);
+        }
+
+
+
+        NonRepeatingCharacter(str);
+    </script> -->
+
+    <script>
+    let str = prompt("Enter the string");
+
+    function findFirstNonRepeatingCharacter(str) {
+        for (let i = 0; i < str.length; i++) {
+            let count = 0;
+            for (let j = 0; j < str.length; j++) {
+                if (str[i] === str[j]) {
+                    count++;
+                }
+            }
+            if (count === 1) {
+                console.log("First non-repeating character is:", str[i]);
+                return;
+            }
+        }
+        console.log("No non-repeating character found");
+    }
+
+    findFirstNonRepeatingCharacter(str);
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sort array of objects with key </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+    <script>
+
+        let arr = [
+            [
+            // { name: "Alice", age: 25 },
+            // { name: "Bob", age: 20 },
+            // { name: "Charlie", age: 30 },
+            //  { name: "nfr", age: 38 },
+            // { name: "frrd4d", age: 32 },
+            { name: "Z", age: 35 },
+  { name: "Y", age: 30 },
+  { name: "X", age: 25 },
+  { name: "W", age: 20 }
+            ]
+
+            // [
+            // { name: "A", age: 25 },
+            // { name: "B", age: 20 },
+            // { name: "Char", age: 30 }
+            // ]
+
+            // [
+            // { name: "nfr", age: 25 },
+            // { name: "frrd4d", age: 20 },
+            // { name: "rdeddhar", age: 30 }
+            // ]
+        ];
+
+        function sortArrayOfObject() {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr[i].length -i- 1; j++) {
+                    if (arr[i][j].age > arr[i][j + 1].age) {
+                        let temp = arr[i][j]
+                        arr[i][j] = arr[i][j + 1]
+                        arr[i][j + 1] = temp;
+                    }
+                }
+            }
+            console.log("sorted array is ", arr);
+        }
+        sortArrayOfObject();
+
+
+    </script>
+
+</body>
+
+</html>

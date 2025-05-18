@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>object  test cases of a string</title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+    <script>
+        let str = prompt("Enter the first string");
+        
+        function addStringToObject(str) {
+            let freq = {};
+         for(let i=0;i<str.length;i++){
+                 let ch=str[i];
+                 freq[ch]=ch;
+         }   
+         console.log("object is ",freq);
+        }
+        addStringToObject(str);
+    </script>
+
+   
+
+</body>
+
+</html>

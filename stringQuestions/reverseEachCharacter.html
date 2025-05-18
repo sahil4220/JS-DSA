@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>reverse each character  </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+
+    <script>
+
+       let str = prompt("Enter the string");
+       let words=str.split(" ");
+       function reverseEachCharacter(str){
+        let result="";
+        
+       for(let i=0;i<words.length;i++){
+        let singleWord=words[i];
+        for(let j=singleWord.length-1;j>=0;j--){
+            result += singleWord[j];
+         
+        }
+        result +=" ";
+
+       }
+    console.log("result is ",result);
+    }
+
+reverseEachCharacter(str);
+
+
+
+            </script>
+</body>
+
+</html>

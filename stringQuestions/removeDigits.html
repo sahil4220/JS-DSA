@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>remove digits </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+
+    <script>
+
+       let str = prompt("Enter the string");
+       let result = '';
+
+for (let i = 0; i < str.length; i++) {
+    if (!isNaN(str[i]) && str[i] !== ' ') {  
+        continue;  
+    }
+    result += str[i];  
+}
+
+console.log("String after removing digits:", result);
+
+
+            </script>
+</body>
+
+</html>

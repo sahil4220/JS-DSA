@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>capital evry vowel </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+
+    <!-- <script>
+
+        let str = prompt("enter the string");
+        
+        function capitalVowel(str) {
+            let arr=str.split(" ");
+          let result="";
+           for(let i=0;i<arr.length;i++){
+            for( let j=0;j<arr[i].length;j++){
+                if(arr[i][j]==='a' || arr[i][j]==='e' ||  arr[i][j]==='i' ||  arr[i][j]==='o' || arr[i][j]==='u') {
+                   result += arr[i][j].toUpperCase();
+                }else{
+                    result +=arr[i][j];
+                }
+            }
+           result +=" ";
+        }
+        console.log("result is",result);
+        }
+        capitalVowel(str);
+            </script> -->
+
+            <script>
+                let str = prompt("Enter the string");
+
+function capitalVowel(str) {
+    let arr = str.split("");
+    let result = "";
+
+    for (let i = 0; i < arr.length; i++) {
+        let ch = arr[i];
+        if (ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u') {
+            result += ch.toUpperCase();
+        } else {
+            result += ch;
+        }
+    }
+
+    console.log("Result is:", result);
+}
+
+capitalVowel(str);
+
+            </script>
+</body>
+
+</html>

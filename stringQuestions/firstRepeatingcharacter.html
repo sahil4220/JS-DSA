@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>first repeating character</title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+
+    <script>
+        let str= prompt("enter the string");
+
+        function firstRepeatingCharacter (str){
+            let found=false;
+            let repeatingCh="";
+        for (let i=0;i<str.length;i++){
+            for(let j=i+1;j<=str.length;j++){
+                if(str[i]==str[j]){
+                    found=true;
+                    repeatingCh=str[i];
+                    break;
+                }
+            }
+           if(found){
+            break;
+           }
+        }
+        if(found){
+            console.log("first repeating character is ",repeatingCh);
+        }else{
+            console.log("no repeating character ");
+        }
+        
+    }
+    firstRepeatingCharacter(str);
+    </script>
+
+</body>
+
+</html>

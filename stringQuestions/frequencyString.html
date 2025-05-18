@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>frequency of a character</title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+
+
+    <!-- <script>
+
+        let str = prompt("Enter the string");
+        let countch = prompt("enter the character to be count");
+        let counter = 0;
+        let i = 0;
+
+
+        for (i = 0; i < str.length; i++) {
+            if (str[i] === countch) {
+                counter++;
+            }
+        }
+        console.log("the", countch, "character is appeared ", counter, "times")
+
+
+
+    </script> -->
+
+
+<script>
+    let str = prompt("Enter the string");
+    let freq={};
+    let i=0;
+    
+    for(i=0;i<str.length;i++){
+        let char=str[i];
+      if(freq[char]){
+        freq[char]++;
+      }  else {
+        freq[char]=1;
+      }
+    }
+   
+    for (const char in freq){
+        console.log(`${char}: ` , "is", `${freq[char]}`, "times" );
+    }
+    
+</script>    
+
+</body>
+
+</html>

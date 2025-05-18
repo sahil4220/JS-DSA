@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>capital evry vowel </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+<!-- 
+    <script>
+        let str=prompt("Enter the String");
+        let arr=str.split(" ");
+        let count=0;
+        for(let  i=0;i<arr.length;i++){
+            if(arr[i]!=""){
+            count++;
+            }
+        }
+        console.log("words in the sentence is ",count);
+    </script> -->
+    <script>
+         let str=prompt("Enter the String");
+        let arr=str.split(" ").filter(words=>words!="");
+        let count=arr.length;
+        console.log(count);
+    </script>
+            
+</body>
+
+</html>
