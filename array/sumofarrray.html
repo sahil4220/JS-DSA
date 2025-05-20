@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sum of elements of array </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+  <script>
+    // let arr=[4,3,1,7,6,3,2,1];
+    // let sum=0;
+    // arr.forEach((num)=>{
+    //     sum +=num;
+    // })
+    // console.log("sum is",sum);
+
+
+        //This version gives undefined because map always returns a array
+
+    let arr=[4,3,1,7,6,3,2,1];
+    let sum=0;
+    let result=arr.map((num)=>{
+        sum +=num;
+     return sum;
+    })
+    console.log("result is",result);
+  </script>
+</body>
+
+</html>

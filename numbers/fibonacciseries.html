@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>fibonaci series </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+    <script>
+        let num = Number(prompt("enter the number"))
+        let a = 0;
+        let b = 1;
+        let c = 0;
+        let result = [a, b];
+
+        function fibonacciSeries() {
+            for (let i = 1; i <= num; i++) {
+                 c = a + b;
+                result.push(c);
+                a = b;
+                b = c;
+            }
+            console.log(`fibonacciu series upto ${num}`, result)
+        }
+        fibonacciSeries();
+
+
+
+    </script>
+
+</body>
+
+</html>

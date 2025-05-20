@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>largest difference in array</title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+  <script>
+   let arr=[21,5,31,11,7,12,13];
+   let max=arr[0];
+   let min=arr[0];
+   arr.forEach((num)=>{
+    if( num > max ){
+        max=num;
+    }else if( num < min ){
+        min=num;
+    }
+   })
+   console.log("the largest difference between any two number is",max-min);
+  </script>
+</body>
+
+</html>

@@ -12,33 +12,27 @@
 
         let arr = [
             [
-            // { name: "Alice", age: 25 },
-            // { name: "Bob", age: 20 },
-            // { name: "Charlie", age: 30 },
-            //  { name: "nfr", age: 38 },
-            // { name: "frrd4d", age: 32 },
+           
             { name: "Z", age: 35 },
   { name: "Y", age: 30 },
   { name: "X", age: 25 },
   { name: "W", age: 20 }
+            ],
+              [
+           
+            { name: "3defe", age: 40 },
+  { name: "Ywfewf", age: 45 },
+  { name: "Xewfew", age: 42 },
+  { name: "Wwww", age: 20 }
             ]
 
-            // [
-            // { name: "A", age: 25 },
-            // { name: "B", age: 20 },
-            // { name: "Char", age: 30 }
-            // ]
-
-            // [
-            // { name: "nfr", age: 25 },
-            // { name: "frrd4d", age: 20 },
-            // { name: "rdeddhar", age: 30 }
-            // ]
+           
         ];
 
         function sortArrayOfObject() {
             for (let i = 0; i < arr.length; i++) {
-                for (let j = 0; j < arr[i].length -i- 1; j++) {
+                for(let pass=0; pass< arr[i].length-1; pass++){
+                for (let j = 0; j < arr[i].length - 1; j++) {
                     if (arr[i][j].age > arr[i][j + 1].age) {
                         let temp = arr[i][j]
                         arr[i][j] = arr[i][j + 1]
@@ -46,12 +40,39 @@
                     }
                 }
             }
+            }
             console.log("sorted array is ", arr);
         }
         sortArrayOfObject();
 
 
     </script>
+    <!-- <script>
+        let arr = [
+  [
+    { name: "Z", age: 35 },
+    { name: "Y", age: 30 },
+    { name: "X", age: 25 },
+    { name: "W", age: 20 }
+  ],
+  [
+    { name: "3defe", age: 40 },
+    { name: "Ywfewf", age: 45 },
+    { name: "Xewfew", age: 42 },
+    { name: "Wwww", age: 20 }
+  ]
+];
+
+function sortArrayOfObjectsWithMap() {
+  let sortedArr = arr.map(innerArr => 
+    innerArr.slice().sort((a, b) => a.age - b.age)
+  );
+  
+  console.log("Sorted array:", sortedArr);
+}
+
+sortArrayOfObjectsWithMap();
+    </script> -->
 
 </body>
 

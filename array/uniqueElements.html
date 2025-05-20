@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>unique element in an array </title>
+</head>
+
+<body>
+    <h2>Open the browser console to see the result!</h2>
+
+    <!-- <script>
+
+let arr = [1, 2, 3, 4, 1, 2];
+
+function findUnique(arr) {
+    let countObj = {};
+    let uniqueArr = [];
+
+   
+    for (let i = 0; i < arr.length; i++) {
+        let num = arr[i];
+        if (countObj[num]) {
+            countObj[num]++;
+        } else {
+            countObj[num] = 1;
+        }
+    }
+
+    
+    for (let key in countObj) {
+        if (countObj[key] === 1) {
+            uniqueArr.push(Number(key)); 
+        }
+    }
+
+    console.log("Unique elements are:", uniqueArr);
+}
+
+findUnique(arr);
+
+
+
+
+</script>
+             -->
+    <script>
+        let arr = [1, 2, 3, 4, 2, 4, 5];
+        let countObj = {};
+        let uniqueElements=[];
+        function findUnique() {
+            arr.map((num) => {
+                if (countObj[num]) {
+                    countObj[num]++;
+                } else {
+                    countObj[num] = 1;
+                }
+            })
+
+            for(let key in countObj){
+                if(countObj[key]===1){
+                uniqueElements.push(Number(key));
+                }
+            }
+           
+
+            console.log("unique elements are ",uniqueElements)
+        }
+
+        findUnique();
+    </script>
+
+</body>
+
+</html>
